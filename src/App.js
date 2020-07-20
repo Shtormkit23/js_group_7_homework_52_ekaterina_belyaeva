@@ -95,7 +95,6 @@ class App extends Component{
             cards[i].rank = cardState.rank;
             cards[i].symbol = cardState.symbol;
         }
-        console.log(this.state.cardsState)
         this.setState({cards:cards});
 
     };

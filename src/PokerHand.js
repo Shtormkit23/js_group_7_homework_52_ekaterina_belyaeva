@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 
 class PokerHand extends Component {
 
@@ -14,7 +14,7 @@ class PokerHand extends Component {
         for (let i = 0; i < cardList.length; i++) {
             flash.push(cardList[i].symbol)
         }
-        let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index)
+        let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) !== index)
 
         if (findDuplicates(flash)[0] !== '-' && findDuplicates(flash).length === 4) {
             return 'Flush';
